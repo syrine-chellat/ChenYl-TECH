@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-type
-
 typedef Struct{
 int identifiant;
 char nom[MAX_nom];
