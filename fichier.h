@@ -4,8 +4,6 @@
 
 
 typedef Struct{
-
-typedef Struct{
 int identifiant;
 char nom[MAX_nom];
 Espece espece;
