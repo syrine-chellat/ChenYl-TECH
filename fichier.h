@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX_nom 50
+#define MAX_com 100
 
 typedef enum {CHIEN, CHAT, HAMSTER, AUTRUCHE} Espece;
 
