@@ -69,6 +69,6 @@ void adoption(Animal* a){
       n++;
     }
   }
-  constructeur_animal(*a, n);
-  creer_fichier_animal(*a, n);
+  constructeur_animal(a, n);
+  creer_fichier_animal(a, n);
 }
