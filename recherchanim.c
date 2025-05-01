@@ -26,6 +26,29 @@ if(choix==1){
   printf("Choisissez la tranche d'âge : 1-jeune(<2ans) 2-senior(>10ans) :");
   scanf ("%d", &age);
 }
+
 printf("\n------------RESULTAT(S)----------------\n");
+
 int anim_trouvés=0;
+
+for (int=0; i<animaux[i], i++){
+  int correpondance==1;
+
+  if(strcmp(animaux[i]->nom, nom) !=0){
+    correspondance==0;
+}
+
+  if ((animaux[i]->espece, espece
+  if
+  }
+
+  if(correpondance==1){
+  }
+  if (anim_trouvés==0){
+  printf("Aucun animal trouvés");
+  }
+}
+// revenir à l'acceuil ??
+
+
 
