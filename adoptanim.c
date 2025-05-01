@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <fichier.h>
 
 void adopter_animal(Animal* animaux[], int* nb_animaux) {
   int identifiant;
