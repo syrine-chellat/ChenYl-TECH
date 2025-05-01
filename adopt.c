@@ -5,7 +5,7 @@ void vide_buffer(){
   }
 }
 
-void constructeur_animal(Animal* a){
+void constructeur_animal(Animal* a,int n){
   int esp, verif;
   printf("Nom animal : ");
   scanf("%s", a->nom);
@@ -41,6 +41,8 @@ void constructeur_animal(Animal* a){
     printf("Commentaire : ");
     scanf("%s", a->commentaire);
   }
+
+  a->identifiant = n;
 }
 
 FILE* creer_fichier_animal(Animal* a, int n){
@@ -54,9 +56,19 @@ FILE* creer_fichier_animal(Animal* a, int n){
     exit(1);
   }
   else{
-    fprintf(fic, "%s \n %s \n %d \n %f \n %s", a->nom, a->espece, a->annee, a->poids, a->commentaire);
+    fprintf(fic,"%d \n "%s \n %s \n %d \n %f \n %s",a->identifiant, a->nom, a->espece, a->annee, a->poids, a->commentaire);
     printf("Le fichier animal a bien été rempli!");
   }
   return fic;
 }
 
+void adoption(Animal* a){
+  int n=0;
+  for(int i=0; i<50, i++){
+    if((a+i)->identifiant!=NULL){
+      n++;
+    }
+  }
+  constructeur_animal(*a, n);
+  creer_fichier_animal(*a, n);
+}
