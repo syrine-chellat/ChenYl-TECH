@@ -1,6 +1,7 @@
 #include <fichier.h>
+#define nombre_animaux 50
 
-void rechercher_animal(){
+void rechercher_animal(Animal* animaux[], int nombre_animaux){
 char nom[50]== "";
 int espece=-1;
 int age=-1;
@@ -8,7 +9,7 @@ int choix;
 
 // RECHERCHER AVEC LE NOM
 do{
-  printf("Voulez vous chercher par nom ? 1=espece 2=non ) :\n");
+  printf("Voulez vous chercher par nom ? \n1=oui \n2=non \n");
   scanf("%d",&choix);
 }while(choix==1||choix==2);
 if(choix==1){
@@ -18,7 +19,7 @@ if(choix==1){
 
 // RECHERCHER AVEC L'ESPECE
 do{
-  printf("Voulez vous chercher par espèce ? \n1=espèce \n2=non :\n);
+  printf("Voulez vous chercher par espèce ? \n1=espèce \n2=non \n");
   scanf("%d",&choix);
 }while(choix==1||choix==2);
 if(choix==1){
@@ -44,28 +45,28 @@ printf("\n------------RESULTAT(S)----------------\n");
 
 int anim_trouvés=0;
 
-for (int=0; i<animaux, i++){
+for (int=0; i<nombre_animaux, i++){
   int correpondance==1;
 
-  if(strlen(nom)>0 && strcmp(animaux[i]->nom, nom) !=0){
+  if(strcmp(animaux[i]->nom, nom) !=0){
     correspondance==0;
   }
 
-  if (espece!=-1 && animaux[i]->espece != espece){
+  if (animaux[i]->espece != espece){
     correspondance==0;
   }
 
   int age_anim=2025 - animaux[i]->annee;
-  if(age == 1 && animaux_age>=2){
+  if(age==1 && age_anim>=2){
     correspondance==0;
   }
-  if(age == 2 && animaux_age<=10){
+  if(age == 2 && age_anim<=10){
     correspondance==0;
   }
 
   if(correpondance==1){
     anim_trouvés++;
-    printf("Identifiant : %d \n Nom : %s \n Espèce : %s \n Année : %d \n Poids : %2f kg \n Commentaires : %s\n", animaux->identifiant, animaux->nom, animaux->espece, animaux->poids, animaux->commentaire);
+    printf("Identifiant : %d \n Nom : %s \n Espèce : %s \n Année : %d \n Poids : %2f kg \n Commentaires : %s\n", animaux[i]->identifiant, animaux[i]->nom, animaux[i]->espece, animaux[i]->poids, animaux[i]->commentaire);
   }
 }
 printf( "Nombre d'animaux trouvés : %d \n",anim_trouvés);
