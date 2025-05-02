@@ -6,26 +6,38 @@ int espece=-1;
 int age=-1;
 int choix=0;
 
-
-printf("Voulez vous chercher par nom ? 1=espece 2=non ) :");
-scanf("%d",&choix);
+// RECHERCHER AVEC LE NOM
+do{
+  printf("Voulez vous chercher par nom ? 1=espece 2=non ) :");
+  scanf("%d",&choix);
+}while(choix==1||choix==2);
 if(choix==1){
   printf("Entrez le nom :");
   scanf("%s",&nom);
 }
 
-printf("Voulez vous chercher par espèce ? 1=espèce 2=non :);
+// RECHERCHER AVEC L'ESPECE
+do{
+  printf("Voulez vous chercher par espèce ? 1=espèce 2=non :);
   scanf("%d",&choix);
+}while(choix==1||choix==2);
 if(choix==1){
-  printf("Choisissez l'espèce : 1-Chien 2-Chat 3-Hamster 4-Autruche 5-Lapin ");
+  do{
+  printf("Choisissez l'espèce : 1-Chien 2-Chat 3-Hamster 4-Autruche 5-Lapin 6-Lama ");
   scanf("%d",&espece);
+  }while(choix==1||choix==2||choix==3||choix==4||choix==5||choix==6);
 }
 
-printf("Voulez vous cherchez par sa tranche d'âge ? 1=oui 2=non ) :");
-scanf("%d",&choix);
+// RECHERCHER AVEC LA TRANCHE D'AGE
+do{
+  printf("Voulez vous cherchez par sa tranche d'âge ? 1=oui 2=non ) :");
+  scanf("%d",&choix);
+}while(choix==1||choix==2);
 if(choix==1){
+  do{
   printf("Choisissez la tranche d'âge : 1-jeune(<2ans) 2-senior(>10ans) :");
   scanf ("%d", &age);
+  }while(age==1||choix==2);
 }
 
 printf("\n------------RESULTAT(S)----------------\n");
