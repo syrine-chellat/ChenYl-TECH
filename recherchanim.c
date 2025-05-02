@@ -4,7 +4,7 @@ void rechercher_animal(){
 char nom[50]== "";
 int espece=-1;
 int age=-1;
-int choix=0;
+int choix;
 
 // RECHERCHER AVEC LE NOM
 do{
