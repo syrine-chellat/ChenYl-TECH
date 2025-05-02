@@ -22,7 +22,7 @@ void adopter_animal(Animal* animaux[], int* nombre_animaux) {
     animaux[nombre_animaux-1]->espece="\0";
     animaux[nombre_animaux-1]->annee="\0";
     animaux[nombre_animaux-1]->poids="\0";
-    animaux[nombre_animaux-1]->commentaire[0]="\0";
+    animaux[nombre_animaux-1]->commentaire[0]="vide";
     (*nombre_animaux)--;
     
     printf("L'animal a été adopté. Prenez bien soin de lui.\n");
