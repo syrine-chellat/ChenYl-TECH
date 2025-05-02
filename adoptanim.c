@@ -27,14 +27,12 @@ void adopter_animal(Animal* animaux[], int* nombre_animaux) {
     
     printf("L'animal a été adopté. Prenez bien soin de lui.\n");
     trouvé_id=1;
+    break;
   }
   
-break;
-}
-
-if(trouvé_id!=1){
-  printf("Aucun animal avec cette identifiant %d n'a été trouvé. \n), identifiant);
-}
+  if(trouvé_id!=1){
+    printf("Aucun animal avec cette identifiant %d n'a été trouvé. \n), identifiant);
+  }
   
 }
 
