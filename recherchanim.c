@@ -65,7 +65,7 @@ for (int=0; i<animaux, i++){
 
   if(correpondance==1){
     anim_trouvés++;
-    printf("Identifiant : %d \n Nom : %s \n Espèce : %s \n Année : %d \n Poids : %2f kg \n Commentaires : %s\n", animaux[i].identifiant, animaux.nom, animaux.espece.??, animaux.poids, animaux.commentaire);
+    printf("Identifiant : %d \n Nom : %s \n Espèce : %s \n Année : %d \n Poids : %2f kg \n Commentaires : %s\n", animaux->identifiant, animaux->nom, animaux->espece, animaux->poids, animaux->commentaire);
   }
 }
 printf( "Nombre d'animaux trouvés : %d \n",anim_trouvés);
