@@ -10,6 +10,7 @@ int identifiant;
 char nom[MAX_nom];
 Espece espece;
 int annee;
+float poids;
 char commentaire[MAX_com];
 } Animal;
 
