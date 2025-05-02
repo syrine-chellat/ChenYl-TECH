@@ -1,6 +1,6 @@
 #include <fichier.h>
 
-void adopter_animal(Animal* animaux[], int* nombre_animaux) {
+void adopter_animal(Animal* animaux, int* nombre_animaux) {
   int identifiant;
   int trouvé_id=0;
   printf("Entrez le numéro d'identifiant de l'animal à adopter :");
