@@ -1,7 +1,7 @@
 #include <fichier.h>
 #define nombre_animaux 50
 
-void rechercher_animal(Animal* animaux[], int nombre_animaux){
+void rechercher_animal(Animal* animaux, int nombre_animaux){
   char nom[50]== "";
   int espece=-1;
   int age=-1;
