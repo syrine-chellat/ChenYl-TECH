@@ -4,7 +4,7 @@
 #define MAX_nom 50
 #define MAX_com 100
 #define MAX_animaux 50
-#define NB_ESPECE 4
+#define NB_especes 4
 
 typedef enum {CHIEN, CHAT, HAMSTER, AUTRUCHE} Espece;
 
