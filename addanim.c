@@ -1,6 +1,5 @@
 #include <fichier.h>
 
-
 void vide_buffer(){
   while(getchar()!='\n'){
   }
@@ -16,10 +15,10 @@ void constructeur_animal(Animal* a, int* esp, int n){
   scanf("%s", a->nom);
 
   do{
-    printf("Saisir le numéro de l'espèce : \n 0-Chien \n 1-Chat \n 2-Hamster \n 3-Autruche \n");
+    printf("Saisir le numéro de l'espèce : \n 0-Chien \n 1-Chat \n 2-Hamster \n 3-Autruche \n 4-Lapin \n 5-Lama");
     verif = scanf("%d", esp);
     vide_buffer();
-  } while(*esp<0 || *esp>3 || verif!=1);
+  } while(*esp<0 || *esp>5 || verif!=1);
   a->espece = (Espece)*esp;
 
   do{
@@ -63,6 +62,7 @@ void constructeur_animal(Animal* a, int* esp, int n){
 
   a->identifiant = n;
 }
+
 
 
 
