@@ -31,7 +31,7 @@ void adopter_animal(Animal* animaux, int* nombre_animaux) {
   }
   
   if(trouvé_id!=1){
-    printf("Aucun animal avec cette identifiant %d n'a été trouvé. \n), identifiant);
+    printf("Aucun animal avec cette identifiant %d n'a été trouvé. \n", identifiant);
   }
   
 }
