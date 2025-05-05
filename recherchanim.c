@@ -57,7 +57,7 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
 
   int anim_trouvés=0;
 
-  for (int i=0; i<nombre_animaux, i++){
+  for (int i=0; i<nombre_animaux; i++){
     int correspondance=1;
 
     if(strcmp(animaux->nom, nom) !=0){
