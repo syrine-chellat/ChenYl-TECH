@@ -18,7 +18,7 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
   }while(choix!=1&&choix!=2);
   if(choix==1){
     printf("Entrez le nom :\n");
-    scanf("%s",nom[50]);
+    scanf("%s",nom);
   }
 
 // RECHERCHER AVEC L'ESPECE
