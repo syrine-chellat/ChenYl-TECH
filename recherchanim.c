@@ -93,12 +93,6 @@ do{
 printf("Voulez vous revenir à l'acceuil ? \n1-Oui \n2- Non\n");
 scanf("%d",&b);
 }while(b==1 && b==2);
-if (b==1){
-  // revenir à l'acceuil
-}
-if(b==2){
-  // terminer ou rechercher 
-}
 }
 
 
