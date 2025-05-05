@@ -2,7 +2,6 @@
 #define NB_ANIMAUX_MAX
 
 void rechercher_animal(Animal* animaux, int nombre_animaux){
-  int b;
   char nom[50]= "";
   int espece=-1;
   int age=-1;
@@ -87,12 +86,6 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
   if (anim_trouvés==0){
     printf("Aucun animal n'a été trouvé.\n");
   }
-}
-
-do{
-printf("Voulez vous revenir à l'acceuil ? \n1-Oui \n2- Non\n");
-scanf("%d",&b);
-}while(b==1 && b==2);
 }
 
 
