@@ -9,7 +9,7 @@ void afficher_animal(Animal a ) {
 
 printf("Poids: %.2 kg\n" , a.poids);
 
-if (a.commentaire[0] != \0) { 
+if (a.commentaire[0] != '\0') { 
   printf("Coommentaire: %s\n", a.commentaire);
 } else { 
     printf("Commentaire: Aucun \n" );
