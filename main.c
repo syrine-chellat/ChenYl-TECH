@@ -4,7 +4,7 @@ int main (){
 
   
 // RECHERCHER UN ANIMAL
-Animal* tableau[50];
+Animal tableau[50];
 rechercher_animal( Animal tableau, 50);
 
 
