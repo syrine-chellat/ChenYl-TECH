@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <fichier.h>
+
 
 int afficher_menu() {
   int choix;
@@ -10,9 +11,9 @@ printf("4. Adopter un animal \n");
 printf("5. Quitter \n");
 printf("Choix: ");
  scanf("%d" , &choix); 
-return choix;
-}
-   while (choix < 1 || choix > 5 ) {
+ while (choix < 1 || choix > 5 ) {
           printf("Erreur: Choix invalide.");
           scanf("%d" , &choix);
    }
+return choix;
+}
