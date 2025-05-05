@@ -32,7 +32,7 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
     do{
       printf("Choisissez l'espèce : \n1-Chien \n2-Chat \n3-Hamster \n4-Autruche \n5-Lapin \n6-Lama \n");
       scanf("%d",&espece);
-       if(choix!=1&&choix!=2){
+       if(choix!=1&&choix!=2&&choix!=3&&choix!=4&&choix!=5&&choix!=6){
         printf("Veuillez entrer 1, 2, 3, 4, 5 ou 6 uniquement.\n");
        }
     }while(choix!=1&&choix!=2&&choix!=3&&choix!=4&&choix!=5&&choix!=6);
