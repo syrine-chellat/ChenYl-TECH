@@ -2,7 +2,7 @@
 #define NB_ANIMAUX_MAX
 
 void rechercher_animal(Animal* animaux, int nombre_animaux){
-  char nom[50]== "";
+  char nom[50]= "";
   int espece=-1;
   int age=-1;
   int choix;
