@@ -10,7 +10,7 @@ typedef enum {CHIEN, CHAT, HAMSTER, AUTRUCHE} Espece;
 
 const char* nomsEspeces[] = {"CHIEN","CHAT","HAMSTER","AUTRUCHE"};
 
-typedef Struct{
+typedef struct{
 int identifiant;
 char nom[MAX_nom];
 Espece espece;
