@@ -14,7 +14,7 @@ void adopter_animal(Animal* animaux, int* nombre_animaux) {
     }
     
     for(int j=i; j<*nombre_animaux-1; j++){
-      animaux[j]=aniamux[j+1];
+      animaux[j]=animaux[j+1];
     }
     
     animaux[nombre_animaux-1]->identifiant=0;
