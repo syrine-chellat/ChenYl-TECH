@@ -78,7 +78,7 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
 
     if(correspondance==1){
       anim_trouvés++;
-      printf("Identifiant : %d \n Nom : %s \n Espèce : %d \n Année : %d \n Poids : %2f kg \n Commentaires : %s\n", animaux->identifiant, animaux->nom, animaux->espece,aniamux->annee, animaux->poids, animaux->commentaire);
+      printf("Identifiant : %d \n Nom : %s \n Espèce : %d \n Année : %d \n Poids : %2f kg \n Commentaires : %s\n", animaux->identifiant, animaux->nom, animaux->espece,animaux->annee, animaux->poids, animaux->commentaire);
     }
   
   printf( "Nombre d'animaux trouvés : %d \n",anim_trouvés);
