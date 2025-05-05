@@ -2,6 +2,7 @@
 #define NB_ANIMAUX_MAX
 
 void rechercher_animal(Animal* animaux, int nombre_animaux){
+  int b;
   char nom[50]= "";
   int espece=-1;
   int age=-1;
@@ -96,7 +97,7 @@ if (b==1){
   // revenir à l'acceuil
 }
 if(b==2){
-  // terminer ou rechrcher 
+  // terminer ou rechercher 
 }
 }
 
