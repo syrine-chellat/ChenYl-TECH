@@ -16,13 +16,13 @@ void adopter_animal(Animal* animaux, int* nombre_animaux) {
     for(int j=i; j<*nombre_animaux-1; j++){
       animaux[j]=animaux[j+1];
     }
-    
-    animaux[nombre_animaux-1]->identifiant=0;
-    animaux[nombre_animaux-1]->nom[0]="\0";
-    animaux[nombre_animaux-1]->espece="\0";
-    animaux[nombre_animaux-1]->annee="\0";
-    animaux[nombre_animaux-1]->poids="\0";
-    animaux[nombre_animaux-1]->commentaire[0]="vide";
+  }
+    animaux->identifiant=0;
+    animaux->nom="\0";
+    animaux->espece="\0";
+    animaux->annee="\0";
+    animaux->poids="\0";
+    animaux->commentaire="vide";
     (*nombre_animaux)--;
     
     printf("L'animal a été adopté. Prenez bien soin de lui.\n");
