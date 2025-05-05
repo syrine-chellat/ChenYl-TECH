@@ -1,5 +1,5 @@
 #include <fichier.h>
-#define nombre_animaux 50
+#define NB_ANIMAUX_MAX
 
 void rechercher_animal(Animal* animaux, int nombre_animaux){
   char nom[50]== "";
