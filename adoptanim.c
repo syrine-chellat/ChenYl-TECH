@@ -9,8 +9,8 @@ void adopter_animal(Animal* animaux, int* nombre_animaux) {
   
   for (int i=0; i<*nombre_animaux;i++){
     
-    if(animaux[i]->identifiant==identifiant){
-      printf("Animal trouvé : %s(%d) -- en cours de supression\n", animaux[i]->nom, animaux[i]->identifiant);
+    if(animaux->identifiant==identifiant){
+      printf("Animal trouvé : %s(%d) -- en cours de supression\n", animaux->nom, animaux->identifiant);
     }
     
     for(int j=i; j<*nombre_animaux-1; j++){
