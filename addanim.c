@@ -66,8 +66,7 @@ void constructeur_animal(Animal* a, int* esp, int n){
 
 
 
-
-FILE* creer_fichier_animal(Animal* a, int n){
+FILE* creer_fichier_animal(Animal* a, int esp, int n){
   char nom[50];
   snprintf(nom, sizeof(nom), "animal_%d.txt", n);
 
@@ -78,8 +77,8 @@ FILE* creer_fichier_animal(Animal* a, int n){
     exit(1);
   }
   else{
-    fprintf(fic,"%d \n %s \n %s \n %d \n %f \n %s",a->identifiant, a->nom, a->espece, a->annee, a->poids, a->commentaire);
+    fprintf(fic,"%d \n %s \n %s \n %d \n %f \n %s",a->identifiant, a->nom, nomsEspeces[esp], a->annee, a->poids, a->commentaire);
     printf("Le fichier animal a bien été rempli!");
-  }
-  return fic;
+    }
+    return fic;
 }
