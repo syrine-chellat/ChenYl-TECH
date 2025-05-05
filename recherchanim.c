@@ -19,6 +19,7 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
     printf("Entrez le nom :\n");
     scanf("%s",nom);
   }
+// mettre quelquechos epour vérifier que bien un prénom et pas autres choses comme des chiffres 
 
 // RECHERCHER AVEC L'ESPECE
   do{
@@ -50,8 +51,11 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
   if(choix==1){
     do{
       printf("Choisissez la tranche d'âge : \n1-jeune(<2ans) \n2-senior(>10ans) :\n");
-      scanf ("%d", &age);
-    }while(age==1&&choix==2);
+      scanf ("%d", &choix);
+      if(choix!=1&&choix!=2){
+      printf("Veuillez entrer 1 ou 2 uniquement.\n");
+     }
+    }while(choix!=1&&choix!=2);
   }
 
   printf("\n------------RESULTAT(S)----------------\n");
