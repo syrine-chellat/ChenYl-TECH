@@ -41,7 +41,7 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
 
 // RECHERCHER AVEC LA TRANCHE D'AGE
   do{
-    printf("Voulez vous cherchez par sa tranche d'âge ? \n1=oui \n2=non ) :\n");
+    printf("Voulez vous cherchez par sa tranche d'âge ? \n1=oui \n2=non\n");
     scanf("%d",&choix);
     if(choix!=1&&choix!=2){
       printf("Veuillez entrer 1 ou 2 uniquement.\n");
