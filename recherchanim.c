@@ -37,6 +37,7 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
        }
     }while(choix!=1&&choix!=2&&choix!=3&&choix!=4&&choix!=5&&choix!=6);
   }
+}
 
 // RECHERCHER AVEC LA TRANCHE D'AGE
   do{
