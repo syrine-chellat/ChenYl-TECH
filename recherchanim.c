@@ -14,7 +14,7 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
   }while(choix==1||choix==2);
   if(choix==1){
     printf("Entrez le nom :\n");
-    scanf("%s",&nom);
+    scanf("%s",nom);
   }
 
 // RECHERCHER AVEC L'ESPECE
@@ -45,28 +45,28 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
 
   int anim_trouvés=0;
 
-  for (int=0; i<nombre_animaux, i++){
-    int correpondance==1;
+  for (int i=0; i<nombre_animaux, i++){
+    int correspondance=1;
 
-    if(strcmp(animaux[i]->nom, nom) !=0){
-      correspondance==0;
+    if(strcmp(animaux->nom, nom) !=0){
+      correspondance=0;
     }
 
-    if (animaux[i]->espece != espece){
-      correspondance==0;
+    if (animaux->espece != espece){
+      correspondance=0;
     }
 
-    int age_anim=2025 - animaux[i]->annee;
+    int age_anim=2025 - animaux->annee;
     if(age==1 && age_anim>=2){
-      correspondance==0;
+      correspondance=0;
     }
     if(age == 2 && age_anim<=10){
-      correspondance==0;
+      correspondance=0;
     }
 
-    if(correpondance==1){
+    if(correspondance==1){
       anim_trouvés++;
-      printf("Identifiant : %d \n Nom : %s \n Espèce : %s \n Année : %d \n Poids : %2f kg \n Commentaires : %s\n", animaux[i]->identifiant, animaux[i]->nom, animaux[i]->espece, animaux[i]->poids, animaux[i]->commentaire);
+      printf("Identifiant : %d \n Nom : %s \n Espèce : %s \n Année : %d \n Poids : %2f kg \n Commentaires : %s\n", animaux->identifiant, animaux->nom, animaux->espece, animaux->poids, animaux->commentaire);
     }
   
   printf( "Nombre d'animaux trouvés : %d \n",anim_trouvés);
