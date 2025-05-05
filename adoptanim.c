@@ -17,12 +17,6 @@ void adopter_animal(Animal* animaux, int* nombre_animaux) {
       animaux[j]=animaux[j+1];
     }
   }
-    animaux->identifiant=0;
-    animaux->nom="\0";
-    animaux->espece="\0";
-    animaux->annee="\0";
-    animaux->poids="\0";
-    animaux->commentaire="vide";
     (*nombre_animaux)--;
     
     printf("L'animal a été adopté. Prenez bien soin de lui.\n");
