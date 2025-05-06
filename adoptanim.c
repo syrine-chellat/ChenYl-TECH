@@ -17,6 +17,7 @@ void adopter_animal(Animal* animaux, int* nombre_animaux) {
       animaux[j]=animaux[j+1];
     }
   }
+  // pour la dernière fixhe d'animaux la vider   
     (*nombre_animaux)--;
     
     printf("L'animal a été adopté. Prenez bien soin de lui.\n");
