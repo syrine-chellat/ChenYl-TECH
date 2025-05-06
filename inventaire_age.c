@@ -23,10 +23,11 @@ void INV_AGE_ASC(Animal* animaux, int nombre_animaux){
     }
   }
 
-printf("Il y a %d dans la tranche d'âge de 0 à 2 ans.\n",tranches_age[0]);
-printf("Il y a %d dans la tranche d'âge de 3 à 5 ans.\n",tranches_age[1]);
-printf("Il y a %d dans la tranche d'âge de 6 à 10 ans.\n",tranches_age[2]);
-printf("Il y a %d dans la tranche d'âge de plus de 11 ans.\n",tranches_age[3]);
-printf("Il y a au total %d animaux.\n",nombre_animaux);
+  printf("Il y a %d dans la tranche d'âge de 0 à 2 ans.\n",tranches_age[0]);
+  printf("Il y a %d dans la tranche d'âge de 3 à 5 ans.\n",tranches_age[1]);
+  printf("Il y a %d dans la tranche d'âge de 6 à 10 ans.\n",tranches_age[2]);
+  printf("Il y a %d dans la tranche d'âge de plus de 11 ans.\n",tranches_age[3]);
+  
+  printf("Il y a au total %d animaux.\n",nombre_animaux);
 
 }
