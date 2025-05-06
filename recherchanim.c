@@ -92,11 +92,13 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
       anim_trouvés++;
       printf("Identifiant : %d \n Nom : %s \n Espèce : %d \n Année : %d \n Poids : %2f kg \n Commentaires : %s\n", animaux[i].identifiant, animaux[i].nom, animaux[i].espece, animaux[i].annee, animaux[i].poids, animaux[i].commentaire);
     }
+
+  }
   // trouver solution car message afficher pour chaque animal de la liste 
   printf( "Nombre d'animaux trouvés : %d \n",anim_trouvés);
 
   if (anim_trouvés==0){
     printf("Aucun animal n'a été trouvé.\n");
   }
-}
+
 }
