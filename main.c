@@ -9,6 +9,7 @@ int main()
 	}
     int choix = afficher_menu();
     int cheap = 50;
+    int nb_animaux=2;
 	
 
 do{
@@ -23,7 +24,7 @@ do{
 				break;
 			}
 		case 2 : 
-			rechercher_animal(&animal[0], 50);
+			rechercher_animal(&animal[0], 50); //rechercher_animal(&animal[0], nb_animaux);
 			break;
 		case 3 : 
 			for(int i=0; i<MAX_animaux; i++){
