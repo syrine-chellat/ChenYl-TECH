@@ -1,4 +1,4 @@
-#include <fichier.h>
+#include "fichier.h"
 
 int afficher_menu() {
   int choix;
