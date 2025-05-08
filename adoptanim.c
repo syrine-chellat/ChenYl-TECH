@@ -1,4 +1,4 @@
-#include <fichier.h>
+#include "fichier.h"
 
 void adopter_animal(Animal* animaux, int* nombre_animaux) {
   int identifiant;
