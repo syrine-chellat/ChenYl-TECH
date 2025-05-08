@@ -14,19 +14,26 @@ Exemple :
 - `monmodule.h` : Déclarations des fonctions et structures pour `monmodule.c`
 - `data/` : Dossier contenant les fichiers `.txt` utilisés pour stocker les données des utilisateurs
 
-## ▶️ Compilation
+## ▶️ Compilation 
 
 Explique comment compiler ton programme. Si tu utilises un `Makefile`, explique la commande à exécuter.
 
 Exemple :
 ```bash
 make
+```
+
 
 ## Execution
+```bash
 ./monprogramme
+```
+
 
 ## Nettoyage
+```bash
 make clean
+```
 
 ## Fonctionnalités
 ...
