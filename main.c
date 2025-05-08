@@ -1,5 +1,5 @@
-#include <fichier.h>
-#include <adopt.h>
+#include "fichier.h"
+#include "couleurs.h"
 
 int main()
 {
