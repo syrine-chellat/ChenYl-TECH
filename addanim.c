@@ -5,7 +5,6 @@ void vide_buffer(){
   }
 }
 
-
 void constructeur_animal(Animal* a, int* esp, int n){
     strncpy(a->commentaire, "vide", MAX_com);
     a->commentaire[MAX_com - 1] = '\0';
@@ -15,7 +14,7 @@ void constructeur_animal(Animal* a, int* esp, int n){
   scanf("%s", a->nom);
 
   do{
-    printf("Saisir le numéro de l'espèce : \n 0-Chien \n 1-Chat \n 2-Hamster \n 3-Autruche \n 4-Lapin \n 5-Lama");
+    printf("Saisir le numéro de l'espèce : \n 0-Chien \n 1-Chat \n 2-Hamster \n 3-Autruche \n 4-Lapin \n 5-Lama \n");
     verif = scanf("%d", esp);
     vide_buffer();
   } while(*esp<0 || *esp>5 || verif!=1);
@@ -62,8 +61,6 @@ void constructeur_animal(Animal* a, int* esp, int n){
 
   a->identifiant = n; // nb_aniamux ++;
 }
-
-
 
 
 FILE* creer_fichier_animal(Animal* a, int esp, int n){
