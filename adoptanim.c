@@ -7,7 +7,7 @@ void adopter_animal(Animal* animaux, int* nombre_animaux) {
   scanf("%d",&identifiant);
 
   
-    for (int i=0; i<*nombre_animaux;i++){
+    for (int i=0; i<*nombre_animaux;i++){      // boucle qui permet de comparer l'identifiant saisi à l'identifiant de chaque animal présent dans le refuge
     
         if(animaux[i].identifiant==identifiant){
             trouve_id = 1;
