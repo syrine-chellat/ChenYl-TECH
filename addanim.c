@@ -63,6 +63,22 @@ void constructeur_animal(Animal* a, int* esp, int n){
 }
 
 
+void lire_animaux(const char *nom_fichier, Animal* a, int max) {
+    FILE* fic = fopen(nom_fichier, "r");
+    if (fic == NULL) {
+        printf("Erreur lors de l'ouverture du fichier");
+        exit(4);
+    }
+
+    fscanf(fic, "%49s", a->nom);
+    fscanf(fic, "%f", &a->poids);
+    fscanf(fic, "%d", &a->identifiant);
+    fscanf(fic, "%d", &a->annee_naissance;
+    fscanf(fic, "%d", &a->espece);
+
+    fclose(f);
+}
+
 FILE* creer_fichier_animal(Animal* a, int esp, int n){
   char nom[50];
   snprintf(nom, sizeof(nom), "animal_%d.txt", n);
