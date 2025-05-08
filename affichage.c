@@ -1,4 +1,4 @@
-#include <fichier.h>
+#include "fichier.h"
 
 void afficher_animal(Animal* a, int esp) {
     printf ("\n-- Fiche Animal --\n");
@@ -7,7 +7,7 @@ void afficher_animal(Animal* a, int esp) {
   if (esp >= 0 && esp < NB_ESPECES) {
     printf ("Espèce: %s\n" , nomsEspeces[esp]);
   } else { 
-    printf (" Espéce: Inconnue\n");
+    printf (" Espèce: Inconnue\n");
   }
     printf ("Age: %d ans\n" , 2025 - a->annee); 
     printf("Poids: %.2f kg\n" , a->poids);
