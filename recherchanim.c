@@ -20,7 +20,6 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
     printf("Entrez le nom :\n");
     scanf("%s",nom);
   }
-// trouver solution pour saisi de chiffre à la place de lettre et inversement 
 
 // RECHERCHER AVEC L'ESPECE
   do{
