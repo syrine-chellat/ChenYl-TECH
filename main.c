@@ -1,16 +1,17 @@
 #include <fichier.h>
 #include <adopt.h>
+
 int main()
 {
     Animal animal[50];
-    int esp;
+    int esp, retour;
     int nbanim = compter_animaux(animal, MAX_animaux);
     
     for(int i=0; i<MAX_animaux; i++){
         animal[i].identifiant = 0;
         strncpy(animal[i].nom, "vide", MAX_nom);
         animal[i].nom[MAX_nom - 1] = '\0';
-        animal[i].espece = VIDE;
+        animal[i].espece = 0;
         animal[i].annee = 0;
         animal[i].poids = 0;
     }
@@ -30,12 +31,20 @@ do{
 					constructeur_animal(animal+i, &esp, i);
 					//FILE* fichier = creer_fichier_animal(&animal[i], esp, i);
 					//fclose(fichier);
+					printf("L'animal a bien été enregistré, merci de nous l'avoir confié! \n");
+					break;
 				}
 			}
-			break;
+			retour = retour_menu();
+			if(retour){
+				break;
+			}
 		case 2 : 
 			rechercher_animal(animal, MAX_animaux);
-			break;
+			retour = retour_menu();
+					if(retour){
+					    break;
+					}
 		case 3 : 
 			for(int i=0; i<MAX_animaux; i++){
 				esp = animal[i].espece;
@@ -43,10 +52,16 @@ do{
                   afficher_animal(animal+i, animal[i].espece);
                 }
 			}
-			break;
+		    retour = retour_menu();
+				if(retour){
+				    break;
+				}
 		case 4 : 
 		    adopter_animal(animal, &nbanim);
-		    break;
+		    retour = retour_menu();
+				if(retour){
+				    break;
+				}
 		default :
 			break;
 
