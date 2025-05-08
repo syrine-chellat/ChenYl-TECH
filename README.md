@@ -22,14 +22,14 @@ Exemple :
 ```bash
 make
 
-# Execution
+## Execution
 ./monprogramme
 
-# Nettoyage
+## Nettoyage
 make clean
 
-# Fonctionnalités
+## Fonctionnalités
 ...
 
-#Auteurs
+##Auteurs
 ...
