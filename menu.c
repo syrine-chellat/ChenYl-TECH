@@ -9,7 +9,6 @@ printf("2. Rechercher un animal \n");
 printf("3. Afficher tous les animaux \n");
 printf("4. Adopter un animal \n");
 printf("5. Inventaire \n");
-// printf("5.Fonctionnalités des variantes\n");
 printf("6. Gestion du quotidien \n");
 printf("7.Quitter\n");
 printf("Choix: ");
