@@ -36,7 +36,18 @@ make clean
 ```
 
 ## Fonctionnalités
-...
+Fonctionnalités principales : 
+- rechercher un animal avec comme paramètre(s) : le nom et/ou l'espèce et/ou le type d'âge 
+- ajouter un animal avec une génération automatique de son identifiant
+- adopter un animal en saisissant son identifiant
+Fonctionnalités secondaires ( variantes ) : 
+- inventaire du refuge :
+  affichage du nombre total d'animaux et du nombre d'animaux par espèce
+  affichage  des animaux du refuge par tranche d'âge quartile 
+- gestion du quotidien :
+  affichage de la quantité de croquettes nécessaires pour tout les animaux du refuge
+  affichage de la charge de travail hebdomadaire pour nettoyer les abris du refuge
+  
 
 ## Auteurs
 ...
