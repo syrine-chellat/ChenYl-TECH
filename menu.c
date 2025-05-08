@@ -18,3 +18,13 @@ printf("Choix: ");
    }
 return choix;
 }
+
+int retour_menu(){
+    int retour, verif;
+    do{
+        printf("Taper 1 pour retourner au menu : ");
+        verif = scanf("%d", &retour);
+        vide_buffer();
+    } while(retour != 1 && verif != 1);
+    return retour;
+}
