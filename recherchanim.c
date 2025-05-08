@@ -104,7 +104,6 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
     }
 
   }
-  // trouver solution car message afficher pour chaque animal de la liste 
   printf( "Nombre d'animaux trouvés : %d \n",anim_trouvés);
 
   if (anim_trouvés==0){
