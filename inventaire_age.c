@@ -31,3 +31,9 @@ void INV_AGE_ASC(Animal* animaux, int nombre_animaux){
   printf("Il y a au total %d animaux.\n",nombre_animaux);
 
 }
+
+void NV_NB_DESC(Animal* animal){
+    int nb = compter_animaux(animal, MAX_animaux);
+    printf("Nombre total d'animaux dans le refuge : %d \n", &nb);
+  int tab[6];
+}
