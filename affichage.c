@@ -31,3 +31,8 @@ void afficher_animal(Animal* a, int esp) {
         printf("Commentaire: Aucun \n" );
     }
 }
+void afficher_animaux(Animal animaux[], int nb_animaux) {
+   if (nb_animaux == 0 ) {
+       printf ("\n Auncun animal dans le refuge. \n");
+return;
+   }
