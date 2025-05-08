@@ -67,7 +67,8 @@ int main()
 				}
 		    case 5 :
 		        compter_espece(animal, MAX_animaux, &compte, 6);
-	            INV_NB_DESC(animal, &compte, 6);
+	            	INV_NB_DESC(animal, &compte, 6);
+			INV_AGE_ASC(animal, MAX_animaux);
 		    	retour = retour_menu();
 			   	if(retour){
 			   	    break;
