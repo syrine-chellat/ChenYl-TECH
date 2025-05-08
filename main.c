@@ -1,6 +1,7 @@
 #include "fichier.h"
 #include "couleurs.h"
 
+
 int main()
 {
     Animal animal[50];
@@ -81,10 +82,8 @@ int main()
 				if(retour){
 				    break;
 				}
-            default :
-                break;
     	}
-    }while(choix!=6);
+    }while(choix!=7);
 
 
     return 0;
