@@ -1,4 +1,4 @@
-#include <fichier.h>
+#include "fichier.h"
 
 void compter_espece(Animal* a, int taille_animaux, int* compte, int nb_especes) {
     // Remise à zéro du tableau de comptage
