@@ -1,4 +1,4 @@
-#include <fichier.h>
+#include "fichier.h"
 
 void vide_buffer(){
   while(getchar()!='\n'){
