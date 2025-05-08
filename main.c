@@ -5,6 +5,7 @@ int main()
 {
     Animal animal[50];
     int esp, retour, compte;
+    float croquette;
     int nbanim = compter_animaux(animal, MAX_animaux);
     
     for(int i=0; i<MAX_animaux; i++){
@@ -51,7 +52,7 @@ int main()
 	    	case 3 : 
 		    	for(int i=0; i<MAX_animaux; i++){
 			    	esp = animal[i].espece;
-			    	if(animal[i].poids > 0){  // ou autre critère d’existence
+			    	if(animal[i].poids > 0){  
                     afficher_animal(animal+i, animal[i].espece);
                     }
 		    	}
@@ -67,14 +68,21 @@ int main()
 				}
 		    case 5 :
 		        compter_espece(animal, MAX_animaux, &compte, 6);
-	            	INV_NB_DESC(animal, &compte, 6);
-			INV_AGE_ASC(animal, MAX_animaux);
+	            INV_NB_DESC(animal, &compte, 6);
+	            INV_AGE_ASC(animal, MAX_animaux);
 		    	retour = retour_menu();
 			   	if(retour){
 			   	    break;
 				}
+			case 6 :
+			    croquette = DAY_FOOD(animal, MAX_animaux);
+			    printf("La quantité de croquette quotidienne à prévoir est %f kg \n", croquette);
+			    retour = retour_menu();
+				if(retour){
+				    break;
+				}
             default :
-            break;
+                break;
     	}
     }while(choix!=6);
 
