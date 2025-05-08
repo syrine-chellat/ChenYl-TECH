@@ -38,5 +38,5 @@ make clean
 ## Fonctionnalités
 ...
 
-##Auteurs
+## Auteurs
 ...
