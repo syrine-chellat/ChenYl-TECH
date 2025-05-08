@@ -68,7 +68,7 @@ void INV_NB_DESC(Animal* animal, int* compte, int nb_especes) {
     //trier_stats_croissant(stats, nb_especes);
     for (int i = 0; i < nb_especes - 1; i++) {
         for (int j = i + 1; j < nb_especes; j++) {
-            if (stats[i].count > stats[j].count) {
+            if (stats[i].count < stats[j].count) {
                 // Échange des éléments
                 StatEspece temp = stats[i];
                 stats[i] = stats[j];
