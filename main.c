@@ -78,6 +78,7 @@ int main()
 			case 6 :
 			    croquette = DAY_FOOD(animal, MAX_animaux);
 			    printf("La quantité de croquette quotidienne à prévoir est %f kg \n", croquette);
+			    DAY_CLEAN(animal, MAX_animaux);
 			    retour = retour_menu();
 				if(retour){
 				    break;
