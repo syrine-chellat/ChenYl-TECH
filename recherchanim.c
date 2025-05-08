@@ -1,4 +1,4 @@
-#include <fichier.h>
+#include "fichier.h"
 #define NB_ANIMAUX_MAX
 
 
