@@ -2,7 +2,7 @@
 
 int afficher_menu() {
   int choix;
-printf("\n=== Menu ChenYI-Tech ===\n");
+printf("\n===== Menu ChenYl-Tech =====\n");
 printf("1. Ajouter un animal \n" );
 printf("2. Rechercher un animal \n");
 printf("3. Afficher tous les animaux \n");
