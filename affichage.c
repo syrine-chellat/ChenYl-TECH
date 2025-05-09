@@ -4,7 +4,7 @@ void afficher_animal(Animal* a, int esp) {
     printf ("\n-- Fiche Animal --\n");
     printf ("ID: %d\n" , a->identifiant);
     printf ("Nom: %s\n" , a->nom);
-  if (esp >= 0 && esp < NB_ESPECES) {
+  if (esp >= 0 && esp < NB_especes) {
     printf ("Espèce: %s\n" , nomsEspeces[esp]);
   } else { 
     printf (" Espèce: Inconnue\n");
