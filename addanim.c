@@ -69,12 +69,12 @@ void lire_animaux(const char *nom_fichier, Animal* a, int max) {
         printf("Erreur lors de l'ouverture du fichier");
         exit(4);
     }
-
-    fscanf(fic, "%49s", a->nom);
-    fscanf(fic, "%f", &a->poids);
     fscanf(fic, "%d", &a->identifiant);
-    fscanf(fic, "%d", &a->annee_naissance;
+    fscanf(fic, "%49s", a->nom);
     fscanf(fic, "%d", &a->espece);
+    fscanf(fic, "%d", &a->annee_naissance;
+    fscanf(fic, "%f", &a->poids);
+    fgets(a->commentaire, MAX_com, stdin);
 
     fclose(f);
 }
