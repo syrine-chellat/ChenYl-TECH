@@ -34,10 +34,10 @@ int main()
 				    if(animal[i].poids == 0){
 					    constructeur_animal(animal+i, &esp, i);
 					    clrscr();
-					    FILE* fichier = creer_fichier_animal(&animal[i], esp, i);
+					    FILE* fichier = creer_fichier_animal(&animal[i], i);
 					    fclose(fichier);
 					    printf("L'animal a bien été enregistré, merci de nous l'avoir confié! \n");
-					    system("clear");
+					    clrscr();
 					    break;
 				    }
 			    }
