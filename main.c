@@ -21,7 +21,6 @@ int main()
 	for(int i=0; i<10; i++){
 		 if(animal[i].poids == 0){
 					    constructeur_animal(animal+i, &esp, i);
-					    clrscr();
 					    FILE* fichier = creer_fichier_animal(&animal[i], i);
 					    fclose(fichier);
 	}
@@ -39,11 +38,9 @@ int main()
 			    for(int i=0; i<MAX_animaux; i++){
 				    if(animal[i].poids == 0){
 					    constructeur_animal(animal+i, &esp, i);
-					    clrscr();
 					    FILE* fichier = creer_fichier_animal(&animal[i], i);
 					    fclose(fichier);
 					    printf("L'animal a bien été enregistré, merci de nous l'avoir confié! \n");
-					    clrscr();
 					     if(retour){
 			    	break;
 			    }
@@ -57,7 +54,6 @@ int main()
 		    	break;
 		    case 2 : 
 			    rechercher_animal(animal, MAX_animaux);
-			    clrscr();
 			    retour = retour_menu();
 				    if(retour){
 				        break;
@@ -69,7 +65,6 @@ int main()
 			    	if(animal[i].poids > 0){  
                     afficher_animal(animal+i, animal[i].espece);
                     }
-		    clrscr();
 		    	}
 		        retour = retour_menu();
 				if(retour){
@@ -78,7 +73,6 @@ int main()
 		    break;
 	       	case 4 : 
 		         adopter_animal(animal, &nbanim);
-			 clrscr();
 		         retour = retour_menu();
 			   	if(retour){
 			   	    break;
@@ -88,7 +82,6 @@ int main()
 		        compter_espece(animal, MAX_animaux, &compte, 6);
 	            INV_NB_DESC(animal, &compte, 6);
 	            INV_AGE_ASC(animal, MAX_animaux);
-		    clrscr();
 		    	retour = retour_menu();
 			   	if(retour){
 			   	    break;
@@ -98,7 +91,6 @@ int main()
 			    croquette = DAY_FOOD(animal, MAX_animaux);
 			    printf("La quantité de croquette quotidienne à prévoir est %f kg \n", croquette);
 			    DAY_CLEAN(animal, MAX_animaux);
-			    clrscr();
 			    retour = retour_menu();
 				if(retour){
 				    break;
