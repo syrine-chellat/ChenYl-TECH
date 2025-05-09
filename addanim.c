@@ -38,7 +38,8 @@ void constructeur_animal(Animal* a, int* esp, int n){
     printf("Voulez-vous saisir un commentaire ? Si oui, taper 1, sinon taper 0 \n");
     verif = scanf("%d", &com);
     vide_buffer();
-} while(com!=1 && com!=0 || verif!=1);
+   
+} while((com!=1 && com!=0)||(verif!=1);
 
 
   if(com){
