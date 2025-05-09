@@ -13,15 +13,15 @@ int afficher_menu() {
 	centrer();
 	//couleur("30;45");
     printf("===== Menu ChenYI-Tech =====\n"); 
-    //couleur("0");
+    //couleur("0")
     centrer();
     //couleur("30;45");        
 	printf("1. Ajouter un animal        \n" );
-	//couleur("0");
+	//couleur("0")
 	centrer();
-	//couleur("30;45");
+	//couleur("30;45")
 	printf("2. Rechercher un animal     \n");
-	//couleur("0");
+	//couleur("0")
 	centrer();
 	//couleur("30;45");
 	printf("3. Afficher tous les animaux\n");
