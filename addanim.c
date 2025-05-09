@@ -63,8 +63,11 @@ void constructeur_animal(Animal* a, int* esp, int n){
 }
 
 
-void lire_animaux(const char *nom_fichier, Animal* a, int max) {
-    FILE* fic = fopen(nom_fichier, "r");
+void lire_animaux(Animal* a, n) {
+    char nom[50];
+    snprintf(nom, sizeof(nom), "animal_%d.txt", n);
+
+    FILE* fic = fopen(nom, "r");
     if (fic == NULL) {
         printf("Erreur lors de l'ouverture du fichier");
         exit(4);
