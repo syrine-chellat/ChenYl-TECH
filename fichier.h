@@ -27,7 +27,7 @@ char commentaire[MAX_com];
 typedef struct{
 int count;
 Espece espece;
-}Statespece;
+}StatEspece;
 
 void centrer();
 void vide_buffer();
