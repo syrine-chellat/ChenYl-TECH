@@ -63,7 +63,7 @@ void constructeur_animal(Animal* a, int* esp, int n){
 }
 
 
-void lire_animaux(Animal* a, n) {
+void lire_animaux(Animal* a, int n) {
     char nom[50];
     snprintf(nom, sizeof(nom), "animal_%d.txt", n);
 
