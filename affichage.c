@@ -25,7 +25,7 @@ return;
    }
 printf ("==== Animaux du refuge ====\n ");
 for( int i = 0; i< nb_animaux; i++) {
- if (animaux[i].identifient != -1) {
+ if (animaux[i].identifiant != -1) {
       afficher_animal(&animaux[i], animaux[i].espece);
  }
 }
