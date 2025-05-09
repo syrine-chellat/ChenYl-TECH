@@ -69,7 +69,8 @@ void lire_animaux(Animal* a, int n) {
     char nom[50];
     snprintf(nom, sizeof(nom), "animal_%d.txt", n);
 
-    FILE* fic = fopen(nom, "r");
+    FILE* fic =NULL;
+    *fic = fopen(nom, "r");
     if (fic == NULL) {
         printf("Erreur lors de l'ouverture du fichier");
         exit(4);
