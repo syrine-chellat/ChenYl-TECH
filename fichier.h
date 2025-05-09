@@ -32,6 +32,7 @@ Espece espece;
 void centrer();
 void vide_buffer();
 void lire_animaux(Animal* a, int n);
+FILE* creer_fichier_animal(Animal* a,int n); 
 int afficher_menu();
 int retour_menu();
 void afficher_animal(Animal* a, int esp);
