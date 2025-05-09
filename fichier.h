@@ -24,6 +24,7 @@ float poids;
 char commentaire[MAX_com];
 } Animal;
 
+void centrer();
 void vide_buffer();
 int afficher_menu();
 int retour_menu();
