@@ -8,7 +8,7 @@ void compter_espece(Animal* a, int taille_animaux, int* compte, int nb_especes) 
 
     // Comptage des animaux valides
     for (int i = 0; i < taille_animaux; i++) {
-        if (a[i].poids > 0 && a[i].espece >= 0 && a[i].espece < nb_especes) {
+        if (a[i].poids > 0 && (int)a[i].espece >= 0 && (int)a[i].espece < nb_especes) {
             compte[a[i].espece]++;
         }
     }
