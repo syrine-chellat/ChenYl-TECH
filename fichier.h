@@ -14,7 +14,6 @@
 typedef enum {CHIEN, CHAT, HAMSTER, AUTRUCHE, LAPIN, LAMA} Espece;
 
 extern char* nomsEspeces[];
-char* nomsEspeces[] = {"CHIEN","CHAT","HAMSTER","AUTRUCHE", "LAPIN", "LAMA"};
 
 typedef struct{
 int identifiant;
