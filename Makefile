@@ -6,21 +6,18 @@ CFLAGS = -Wall -Wextra -g
 
 # Recherche automatique de tous les .c
 SRCS = $(wildcard *.c)
-
-# Convertit tous les .c en .o
 OBJS = $(SRCS:.c=.o)
-
-# Nom de l'exécutable final
 EXEC = monprogramme
 
-# Cible par défaut
 all: $(EXEC)
 
-# Création de l'exécutable à partir des objets
 $(EXEC): $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $^
 
-# Nettoyage
+# Règle explicite pour générer les .o
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
 clean:
 	rm -f *.o $(EXEC)
 
