@@ -65,6 +65,7 @@ void constructeur_animal(Animal* a, int* esp, int n){
 
 
 void lire_animaux(Animal* a, int n) {
+  int tmp;
     char nom[50];
     snprintf(nom, sizeof(nom), "animal_%d.txt", n);
 
@@ -75,11 +76,11 @@ void lire_animaux(Animal* a, int n) {
     }
     fscanf(fic, "%d", &a->identifiant);
     fscanf(fic, "%49s", a->nom);
-    fscanf(fic, "%d", &(int*)a->espece);
+    fscanf(fic, "%d", &tmp);
     fscanf(fic, "%d", &a->annee);
     fscanf(fic, "%f", &a->poids);
     fgets(a->commentaire, MAX_com, stdin);
-
+    a->espece = tmp;
     fclose(fic);
 }
 
