@@ -75,11 +75,11 @@ void lire_animaux(Animal* a, int n) {
     fscanf(fic, "%d", &a->identifiant);
     fscanf(fic, "%49s", a->nom);
     fscanf(fic, "%d", &a->espece);
-    fscanf(fic, "%d", &a->annee_naissance;
+    fscanf(fic, "%d", &a->annee);
     fscanf(fic, "%f", &a->poids);
     fgets(a->commentaire, MAX_com, stdin);
 
-    fclose(f);
+    fclose(fic);
 }
 
 FILE* creer_fichier_animal(Animal* a, int n){
