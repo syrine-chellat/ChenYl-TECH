@@ -19,15 +19,9 @@ int main()
     }
 
 	for(int i = 0; i<21; i++){
-		lire_animaux()
+		lire_animaux(animal, i);
 	}
     
-    for(int i=0; i<2; i++){
-	    constructeur_animal(animal+i, &esp, i);
-	}
-	
-	//compter_espece(animal, MAX_animaux, &compte, 6);
-	//INV_NB_DESC(animal, &compte, 6);
 
 	int choix;
 
