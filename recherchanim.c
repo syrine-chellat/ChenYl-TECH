@@ -6,13 +6,11 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
   int espece=-1;
   int age=-1;
   int choix1, choix2, choix3;
-  int verif;
 
 // RECHERCHER AVEC LE NOM
   do{
     printf("Voulez vous chercher par nom ? \n1=oui \n2=non \n");
-    verif = scanf("%d",&choix1);
-    vide_buffer();
+    scanf("%d",&choix1);
     if(choix1!=1 && choix1!=2){
       printf("Veuillez entrer 1 ou 2 uniquement.\n");
     }
@@ -26,8 +24,7 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
 // RECHERCHER AVEC L'ESPECE
   do{
     printf("Voulez vous chercher par espèce ? \n1=oui \n2=non \n");
-    verif = scanf("%d",&choix2);
-    vide_buffer();
+    scanf("%d",&choix2);
      if(choix2!=1&&choix2!=2){
       printf("Veuillez entrer 1 ou 2 uniquement.\n");
      }
@@ -36,8 +33,7 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
   if(choix2==1){
     do{
       printf("Choisissez l'espèce : \n0-Chien \n1-Chat \n2-Hamster \n3-Autruche \n4-Lapin \n5-Lama \n");
-      verif = scanf("%d",&espece);
-      vide_buffer();
+      scanf("%d",&espece);
        if(espece<0 || espece>5){
         printf("Veuillez entrer 0, 1, 2, 3, 4 ou 5 uniquement.\n");
        }
@@ -48,8 +44,7 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
 // RECHERCHER AVEC LA TRANCHE D'AGE
   do{
     printf("Voulez vous cherchez par sa tranche d'âge ? \n1=oui \n2=non\n");
-    verif = scanf("%d",&choix3);
-    vide_buffer();
+    scanf("%d",&choix3);
     if(choix3!=1&&choix3!=2){
       printf("Veuillez entrer 1 ou 2 uniquement.\n");
      }
@@ -58,8 +53,7 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
   if(choix3==1){
     do{
       printf("Choisissez la tranche d'âge : \n1-jeune(<2ans) \n2-senior(>10ans) :\n");
-      verif = scanf ("%d", &age);
-      vide_buffer();
+      scanf ("%d", &age);
       if(age!=1&&age!=2){
         printf("Veuillez entrer 1 ou 2 uniquement.\n");
      }
