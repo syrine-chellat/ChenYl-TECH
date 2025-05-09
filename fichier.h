@@ -42,7 +42,7 @@ void adopter_animal(Animal* animaux, int* nombre_animaux);
 int compter_animaux(Animal* a, int taille);
 void compter_espece(Animal* a, int taille_animaux, int* compte, int nb_especes);
 float DAY_FOOD(Animal* a, int taille);
-void DAY_FOOD(Animal* a, int taille);
+void DAY_CLEAN(Animal* a, int taille);
 void INV_NB_DESC(Animal* animal, int* compte, int nb_especes);
 void INV_AGE_ASC(Animal* animaux, int nombre_animaux);
 
