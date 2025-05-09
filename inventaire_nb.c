@@ -13,12 +13,20 @@ void compter_espece(Animal* a, int taille_animaux, int* compte, int nb_especes) 
         }
     }
 }
-
-void NV_NB_DESC(Animal* animal){
-    int nb = compter_animaux(animal, MAX_animaux);
-    printf("Nombre total d'animaux dans le refuge : %d \n", &nb);
-  int tab[6];
+int compter_animaux(Animal* a, int taille){
+	int count=0;
+	for (int i=0; i<taille; i++){
+	if( a[i].poids>0){
+	count ++;
+	}
+	}
+	return count;
 }
+//void NV_NB_DESC(Animal* animal){
+   // int nb = compter_animaux(animal, MAX_animaux);
+   // printf("Nombre total d'animaux dans le refuge : %d \n", &nb);
+ // int tab[6];
+//}
 
 
 void INV_NB_DESC(Animal* animal, int* compte, int nb_especes) {
