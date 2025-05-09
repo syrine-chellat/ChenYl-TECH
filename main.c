@@ -44,6 +44,7 @@ int main()
 					     if(retour){
 			    	break;
 			    }
+					    	clrscr();
 					    break;
 				    }
 			    }
@@ -51,6 +52,7 @@ int main()
 			    if(retour){
 			    	break;
 			    }
+			    	clrscr();
 		    	break;
 		    case 2 : 
 			    rechercher_animal(animal, MAX_animaux);
@@ -58,6 +60,7 @@ int main()
 				    if(retour){
 				        break;
 					}
+			    	clrscr();
 		    break;
 	    	case 3 : 
 		    	for(int i=0; i<MAX_animaux; i++){
@@ -70,6 +73,7 @@ int main()
 				if(retour){
 				    break;
 				}
+				clrscr();
 		    break;
 	       	case 4 : 
 		         adopter_animal(animal, &nbanim);
@@ -77,6 +81,7 @@ int main()
 			   	if(retour){
 			   	    break;
 				}
+				clrscr();
 		    break;
 		    case 5 :
 		        compter_espece(animal, MAX_animaux, &compte, 6);
@@ -86,6 +91,7 @@ int main()
 			   	if(retour){
 			   	    break;
 				}
+			    	clrscr();
 		    break;
 			case 6 :
 			    croquette = DAY_FOOD(animal, MAX_animaux);
@@ -95,6 +101,7 @@ int main()
 				if(retour){
 				    break;
 				}
+					clrscr();
 		    break;
     	}
     }while(choix!=7);
