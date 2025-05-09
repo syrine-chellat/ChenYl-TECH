@@ -1,21 +1,51 @@
 #include "fichier.h"
 
+void centrer(){
+	printf("                                                         ");
+}
 
 int afficher_menu() {
   int choix;
-  for(int i=0; i<14; i++){
+ 
+	for(int i=0; i<14; i++){
 		printf("\n");
 	}
-
-  printf("                                                         ===== Menu ChenYI-Tech =====\n");         
-	printf("                                                         1. Ajouter un animal \n" );
-	printf("                                                         2. Rechercher un animal \n");
-	printf("                                                         3. Afficher tous les animaux \n");
-	printf("                                                         4. Adopter un animal \n");
-	printf("                                                         5. Inventaire \n");
-	printf("                                                         6. Gestion du quotidien \n");
-	printf("                                                         7.Quitter\n");
-	printf("                                                         Choix: ");
+	centrer();
+	couleur("30;45");
+    printf("===== Menu ChenYI-Tech =====\n"); 
+    couleur("0");
+    centrer();
+    couleur("30;45");        
+	printf("1. Ajouter un animal        \n" );
+	couleur("0");
+	centrer();
+	couleur("30;45");
+	printf("2. Rechercher un animal     \n");
+	couleur("0");
+	centrer();
+	couleur("30;45");
+	printf("3. Afficher tous les animaux\n");
+	couleur("0");
+	centrer();
+	couleur("30;45");
+	printf("4. Adopter un animal        \n");
+	couleur("0");
+	centrer();
+	couleur("30;45");
+	printf("5. Inventaire               \n");
+	couleur("0");
+	centrer();
+	couleur("30;45");
+	printf("6. Gestion du quotidien     \n");
+	couleur("0");
+	centrer();
+	couleur("30;45");
+	printf("7.Quitter                   \n");
+	couleur("0");
+	centrer();
+	couleur("30;45");
+	printf("Choix: ");
+	couleur("0");
  scanf("%d" , &choix); 
  while (choix < 1 || choix > 7 ) { 
           printf("Erreur: Choix invalide.");
