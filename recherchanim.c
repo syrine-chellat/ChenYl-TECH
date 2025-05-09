@@ -83,7 +83,7 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
       correspondance=0;
     }
 
-    if (espece !=-1 && animaux[i].espece != espece){
+    if (espece !=-1 && (int)animaux[i].espece != espece){
       correspondance=0;
     }
     
