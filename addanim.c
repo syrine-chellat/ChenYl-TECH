@@ -59,7 +59,7 @@ void constructeur_animal(Animal* a, int* esp, int n){
     a->commentaire[MAX_com - 1] = '\0';
   }
 
-  a->identifiant = n; // nb_aniamux ++;
+  a->identifiant = n; // nb_animaux ++;
 }
 
 
