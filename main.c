@@ -27,14 +27,17 @@ int main()
 
     do{
         choix = afficher_menu();
+	system("clear");
 	    switch (choix){
 		    case 1 :
 			    for(int i=0; i<MAX_animaux; i++){
 				    if(animal[i].poids == 0){
 					    constructeur_animal(animal+i, &esp, i);
+					    system("clear");
 					    FILE* fichier = creer_fichier_animal(&animal[i], esp, i);
 					    fclose(fichier);
 					    printf("L'animal a bien été enregistré, merci de nous l'avoir confié! \n");
+					    system("clear");
 					    break;
 				    }
 			    }
@@ -44,6 +47,7 @@ int main()
 			    }
 		    case 2 : 
 			    rechercher_animal(animal, MAX_animaux);
+			    system("clear");
 			    retour = retour_menu();
 				    if(retour){
 				        break;
@@ -54,6 +58,7 @@ int main()
 			    	if(animal[i].poids > 0){  
                     afficher_animal(animal+i, animal[i].espece);
                     }
+		    system("clear");
 		    	}
 		        retour = retour_menu();
 				if(retour){
@@ -61,6 +66,7 @@ int main()
 				}
 	       	case 4 : 
 		         adopter_animal(animal, &nbanim);
+			 system("clear");
 		         retour = retour_menu();
 			   	if(retour){
 			   	    break;
@@ -69,6 +75,7 @@ int main()
 		        compter_espece(animal, MAX_animaux, &compte, 6);
 	            INV_NB_DESC(animal, &compte, 6);
 	            INV_AGE_ASC(animal, MAX_animaux);
+		    system("clear");
 		    	retour = retour_menu();
 			   	if(retour){
 			   	    break;
@@ -77,6 +84,7 @@ int main()
 			    croquette = DAY_FOOD(animal, MAX_animaux);
 			    printf("La quantité de croquette quotidienne à prévoir est %f kg \n", croquette);
 			    DAY_CLEAN(animal, MAX_animaux);
+			    system("clear");
 			    retour = retour_menu();
 				if(retour){
 				    break;
