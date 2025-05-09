@@ -38,6 +38,9 @@ int main()
 					    fclose(fichier);
 					    printf("L'animal a bien été enregistré, merci de nous l'avoir confié! \n");
 					    clrscr();
+					     if(retour){
+			    	break;
+			    }
 					    break;
 				    }
 			    }
@@ -45,6 +48,7 @@ int main()
 			    if(retour){
 			    	break;
 			    }
+		    	break;
 		    case 2 : 
 			    rechercher_animal(animal, MAX_animaux);
 			    clrscr();
@@ -52,6 +56,7 @@ int main()
 				    if(retour){
 				        break;
 					}
+		    break;
 	    	case 3 : 
 		    	for(int i=0; i<MAX_animaux; i++){
 			    	esp = animal[i].espece;
@@ -64,6 +69,7 @@ int main()
 				if(retour){
 				    break;
 				}
+		    break;
 	       	case 4 : 
 		         adopter_animal(animal, &nbanim);
 			 clrscr();
@@ -71,6 +77,7 @@ int main()
 			   	if(retour){
 			   	    break;
 				}
+		    break;
 		    case 5 :
 		        compter_espece(animal, MAX_animaux, &compte, 6);
 	            INV_NB_DESC(animal, &compte, 6);
@@ -80,6 +87,7 @@ int main()
 			   	if(retour){
 			   	    break;
 				}
+		    break;
 			case 6 :
 			    croquette = DAY_FOOD(animal, MAX_animaux);
 			    printf("La quantité de croquette quotidienne à prévoir est %f kg \n", croquette);
@@ -89,6 +97,7 @@ int main()
 				if(retour){
 				    break;
 				}
+		    break;
     	}
     }while(choix!=7);
 
