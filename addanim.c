@@ -70,7 +70,7 @@ void lire_animaux(Animal* a, int n) {
     snprintf(nom, sizeof(nom), "animal_%d.txt", n);
 
     FILE* fic =NULL;
-    *fic = fopen(nom, "r");
+    fic = fopen(nom, "r");
     if (fic == NULL) {
         printf("Erreur lors de l'ouverture du fichier");
         exit(4);
