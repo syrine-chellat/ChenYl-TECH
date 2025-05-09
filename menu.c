@@ -3,15 +3,19 @@
 
 int afficher_menu() {
   int choix;
-printf("\n=== Menu ChenYI-Tech ===\n");
-printf("1. Ajouter un animal \n" );
-printf("2. Rechercher un animal \n");
-printf("3. Afficher tous les animaux \n");
-printf("4. Adopter un animal \n");
-printf("5. Inventaire \n");
-printf("6. Gestion du quotidien \n");
-printf("7.Quitter\n");
-printf("Choix: ");
+  for(int i=0; i<14; i++){
+		printf("\n");
+	}
+
+  printf("                                                         ===== Menu ChenYI-Tech =====\n");         
+	printf("                                                         1. Ajouter un animal \n" );
+	printf("                                                         2. Rechercher un animal \n");
+	printf("                                                         3. Afficher tous les animaux \n");
+	printf("                                                         4. Adopter un animal \n");
+	printf("                                                         5. Inventaire \n");
+	printf("                                                         6. Gestion du quotidien \n");
+	printf("                                                         7.Quitter\n");
+	printf("                                                         Choix: ");
  scanf("%d" , &choix); 
  while (choix < 1 || choix > 7 ) { 
           printf("Erreur: Choix invalide.");
