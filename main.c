@@ -18,8 +18,14 @@ int main()
         animal[i].poids = 0;
     }
 
-	for(int i = 0; i<21; i++){
-		lire_animaux(animal, i);
+	for(int i=0; i<10; i++){
+		 if(animal[i].poids == 0){
+					    constructeur_animal(animal+i, &esp, i);
+					    clrscr();
+					    FILE* fichier = creer_fichier_animal(&animal[i], i);
+					    fclose(fichier);
+	}
+
 	}
     
 
