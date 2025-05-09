@@ -31,6 +31,7 @@ int main()
 	int choix;
 
     do{
+	clrscr();
         choix = afficher_menu();
 	clrscr();
 	    switch (choix){
