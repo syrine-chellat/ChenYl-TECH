@@ -17,6 +17,10 @@ int main()
         animal[i].annee = 0;
         animal[i].poids = 0;
     }
+
+	for(int i = 0; i<21; i++){
+		lire_animaux()
+	}
     
     for(int i=0; i<2; i++){
 	    constructeur_animal(animal+i, &esp, i);
