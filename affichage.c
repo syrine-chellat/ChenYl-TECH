@@ -1,5 +1,7 @@
 #include "fichier.h"
 
+char* nomsEspeces[] = {"CHIEN","CHAT","HAMSTER","AUTRUCHE", "LAPIN", "LAMA"};
+
 void afficher_animal(Animal* a, int esp) {
     printf ("\n-- Fiche Animal --\n");
     printf ("ID: %d\n" , a->identifiant);
