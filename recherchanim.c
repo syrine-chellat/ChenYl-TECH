@@ -6,6 +6,7 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
   int espece=-1;
   int age=-1;
   int choix1, choix2, choix3;
+  int verif;
 
 // RECHERCHER AVEC LE NOM
   do{
