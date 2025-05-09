@@ -24,6 +24,11 @@ float poids;
 char commentaire[MAX_com];
 } Animal;
 
+typedef struct{
+int count;
+Espece espece;
+}Statespece;
+
 void centrer();
 void vide_buffer();
 int afficher_menu();
