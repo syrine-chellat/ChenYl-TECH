@@ -34,8 +34,8 @@ int main()
 			    for(int i=0; i<MAX_animaux; i++){
 				    if(animal[i].poids == 0){
 					    constructeur_animal(animal+i, &esp, i);
-					    //FILE* fichier = creer_fichier_animal(&animal[i], esp, i);
-					    //fclose(fichier);
+					    FILE* fichier = creer_fichier_animal(&animal[i], esp, i);
+					    fclose(fichier);
 					    printf("L'animal a bien été enregistré, merci de nous l'avoir confié! \n");
 					    break;
 				    }
