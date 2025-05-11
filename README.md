@@ -1,5 +1,4 @@
 # Mon Projet
-accès au lien ...
 
 ChenYl-TECH
 Gestion d'un refuge animalier en langage C ( Préing1 2024-2025 ) 
