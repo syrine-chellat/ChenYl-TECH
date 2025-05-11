@@ -86,6 +86,7 @@ void lire_animaux(Animal* a, int n) {
     fscanf(fic, "%f", &a->poids);
     fgets(a->commentaire, MAX_com, fichier);
     a->commentaire[strcspn(a->commentaire, "\n")] = 0; //remplace /n par /0 à la fin 
+  
     fclose(fic);
 }
 
