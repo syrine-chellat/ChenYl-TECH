@@ -25,9 +25,9 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
   do{
     printf("Voulez vous chercher par espèce ? \n1=oui \n2=non \n");
     scanf("%d",&choix2);
-     if(choix2!=1&&choix2!=2){
+    if(choix2!=1&&choix2!=2){
       printf("Veuillez entrer 1 ou 2 uniquement.\n");
-     }
+    }
   }while(choix2!=1&&choix2!=2);
   
   if(choix2==1){
@@ -47,26 +47,26 @@ void rechercher_animal(Animal* animaux, int nombre_animaux){
     scanf("%d",&choix3);
     if(choix3!=1&&choix3!=2){
       printf("Veuillez entrer 1 ou 2 uniquement.\n");
-     }
+    }
   }while(choix3!=1&&choix3!=2);
   
   if(choix3==1){
-    do{
-      printf("Choisissez la tranche d'âge : \n1-jeune(<2ans) \n2-senior(>10ans) :\n");
-      scanf ("%d", &age);
-      if(age!=1&&age!=2){
-        printf("Veuillez entrer 1 ou 2 uniquement.\n");
-     }
+	do{
+    	printf("Choisissez la tranche d'âge : \n1-jeune(<2ans) \n2-senior(>10ans) :\n");
+    	scanf ("%d", &age);
+    	if(age!=1&&age!=2){
+        	printf("Veuillez entrer 1 ou 2 uniquement.\n");
+    	}
     }while(age!=1&&age!=2);
   }
   
-  if(choix1 == 2 && choix2 == 2 && choix3==2){
-    for(int i=0; i<MAX_animaux; i++){
-	   	if(animaux[i].poids > 0){  
-        afficher_animal(animaux+i, animaux[i].espece);
-        }
-    }
-  }
+	if(choix1 == 2 && choix2 == 2 && choix3==2){
+		for(int i=0; i<MAX_animaux; i++){
+	   		if(animaux[i].poids > 0){  
+        		afficher_animal(animaux+i, animaux[i].espece);
+        	}
+    	}
+  	}
 
   printf("\n------------RESULTAT(S)----------------\n");
 
