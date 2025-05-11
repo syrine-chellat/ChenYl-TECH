@@ -13,26 +13,20 @@ void compter_espece(Animal* a, int taille_animaux, int* compte, int nb_especes) 
         }
     }
 }
+
 int compter_animaux(Animal* a, int taille){
 	int count=0;
 	for (int i=0; i<taille; i++){
-	if( a[i].poids>0){
-	count ++;
-	}
+		if( a[i].poids>0){
+			count ++;
+		}
 	}
 	return count;
 }
-//void NV_NB_DESC(Animal* animal){
-   // int nb = compter_animaux(animal, MAX_animaux);
-   // printf("Nombre total d'animaux dans le refuge : %d \n", &nb);
- // int tab[6];
-//}
-
 
 void INV_NB_DESC(Animal* animal, int* compte, int nb_especes) {
     int total = compter_animaux(animal, MAX_animaux);
     printf("Le nombre total d'animaux du refuge est : %d \n", total);
-    
     
     StatEspece stats[nb_especes];
     for (int i = 0; i < nb_especes; i++) {
