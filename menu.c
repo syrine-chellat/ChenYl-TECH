@@ -14,9 +14,9 @@ int afficher_menu() {
 	do{
 		centrer();
 		couleur("30;45");
-    		printf("===== Menu ChenYI-Tech =====\n"); 
-    		couleur("0")
-    		centrer();
+    	printf("===== Menu ChenYI-Tech =====\n"); 
+    	couleur("0")
+    	centrer();
    		couleur("30;45");        
 		printf("1. Ajouter un animal        \n" );
 		couleur("0")
