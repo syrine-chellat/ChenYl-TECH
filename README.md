@@ -18,17 +18,12 @@ Ce programme offre une interface textuelle permettant d’ajouter, rechercher, m
 - `recherche.c` : Code pour rechercher un animal
 - `inventaire.c` : Code pour compter les animaux
 - `quotidien.c` : Code pour gérer les tâches du quotidiens
-- `monmodule.c` : Code pour gérer les utilisateurs
-- `monmodule.c` : Code pour gérer les utilisateurs
-- `monmodule.c` : Code pour gérer les utilisateurs
+- `couleur.h` : Déclarations des fonctions pour affichage en couleurs
 - `fichier.h` : Déclarations des fonctions et structures
 - `animaux/` : Dossier contenant les fichiers `.txt` utilisés pour stocker les données des animaux
 
 ## ▶️ Compilation 
 
-Explique comment compiler ton programme. Si tu utilises un `Makefile`, explique la commande à exécuter.
-
-Exemple :
 ```bash
 make
 ```
