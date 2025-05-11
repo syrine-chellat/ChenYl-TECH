@@ -73,15 +73,19 @@ void lire_animaux(Animal* a, int n) {
     fic = fopen(nom, "r");
     if (fic == NULL) {
         printf("Erreur lors de l'ouverture du fichier");
+        printf("code d'erreur = %d \n", errno );
+        printf("Message d'erreur = %s \n", strerror(errno) );
         exit(4);
     }
+  
     fscanf(fic, "%d", &a->identifiant);
     fscanf(fic, "%49s", a->nom);
     fscanf(fic, "%d", &tmp);
+     a->espece = (Espece)tmp;
     fscanf(fic, "%d", &a->annee);
     fscanf(fic, "%f", &a->poids);
-    fgets(a->commentaire, MAX_com, stdin);
-    a->espece = tmp;
+    fgets(a->commentaire, MAX_com, fichier);
+    a->commentaire[strcspn(a->commentaire, "\n")] = 0; //remplace /n par /0 à la fin 
     fclose(fic);
 }
 
