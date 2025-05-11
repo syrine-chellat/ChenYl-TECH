@@ -3,19 +3,19 @@
 float DAY_FOOD(Animal* a, int taille){
     float croquette = 0;
     for(int i=0; i<taille; i++){
-        if(a[i].poids > 0){
-            if(a[i].espece == 0 || a[i].espece == 1 || a[i].espece == 4){
+        if(a[i].poids > 0){ //condition d'existence
+            if(a[i].espece == 0 || a[i].espece == 1 || a[i].espece == 4){ //chien, chat ou lapin
                 if(2025 - a[i].annee < 2){
-                    croquette += 0.5;
+                    croquette += 0.5;   //500g si age<2
                 }
                 else{
-                    croquette += 0.1 * a[i].poids;
+                    croquette += 0.1 * a[i].poids; //10% du poids si age>2
                 }
             }
-            if(a[i].espece == 2){
+            if(a[i].espece == 2){  //hamster : 20g
                 croquette += 0.02;
             }
-            if(a[i].espece == 3 || a[i].espece == 5){
+            if(a[i].espece == 3 || a[i].espece == 5){  //autruche ou lama : 2.5kg
                 croquette += 2.5;
             }
         }
@@ -27,16 +27,16 @@ void DAY_CLEAN(Animal* a, int taille){
     int temps = 0;
     for (int i=0; i<taille; i++){
         if (a[i].espece == 2 || a[i].espece == 1 ){  // hamster et chat = 10 minutes/jour + 20 minutes/semaine
-        temps += (10*7) + 20;
+            temps += (10*7) + 20;
         }
         if (a[i].espece == 3 || a[i].espece == 5 ){  // autruche et lama = 20 minutes/jour + 45 minutes/semaine
-        temps += (20*7) + 45;
+            temps += (20*7) + 45;
         }
         if(a[i].espece == 0 || a[i].espece == 4){    // chien et lapin = 5 minutes/jour et 20 minutes/semaine
-        temps += (5*7) + 20;
+            temps += (5*7) + 20;
         }
         else{                                        // cage vide = 5 minutes/jour
-        temps += 2*7;
+        t    emps += 2*7;
         }
     }
     int heures = temps/60;
