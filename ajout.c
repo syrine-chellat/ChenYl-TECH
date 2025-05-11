@@ -7,7 +7,7 @@ void vide_buffer(){
 
 void constructeur_animal(Animal* a, int* esp, int n){
     strncpy(a->commentaire, "vide", MAX_com);
-    a->commentaire[MAX_com - 1] = '\0';
+    a->commentaire[MAX_com - 1] = '\0';   //met \0 à la fin si la chaîne est trop longue
     
   int verif;
   printf("Nom animal : ");
@@ -49,25 +49,26 @@ void constructeur_animal(Animal* a, int* esp, int n){
         exit(2);
     }
     else{
-        size_t len = strlen(a->commentaire);
-        if (len > 0 && a->commentaire[len - 1] == '\n') {
-            a->commentaire[len - 1] = '\0';
+        int len = strlen(a->commentaire);
+        if (len > 0 && a->commentaire[len - 1] == '\n') {   //vérifier s’il y a un \n à la fin de la chaîne
+            a->commentaire[len - 1] = '\0';    //le remplacer par \0
         }
     }
   }
+    
   else{
     strncpy(a->commentaire, "vide", MAX_com);
-    a->commentaire[MAX_com - 1] = '\0';
+    a->commentaire[MAX_com - 1] = '\0'; //mettre le commentaire à "vide" si l'utilisateur ne veut pas en mettre
   }
 
-  a->identifiant = n; // nb_animaux ++
+  a->identifiant = n; 
 }
 
 
 void lire_animaux(Animal* a, int n) {
-  int tmp;
+    int tmp;
     char nom[50];
-    snprintf(nom, sizeof(nom), "animal_%d.txt", n);
+    snprintf(nom, sizeof(nom), "animal_%d.txt", n); 
 
     FILE* fic =NULL;
     fic = fopen(nom, "r");
