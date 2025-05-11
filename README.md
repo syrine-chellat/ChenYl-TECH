@@ -55,4 +55,8 @@ Fonctionnalités secondaires ( variantes ) :
   
 
 ## Auteurs
-...
+Syrine Chellat
+Nisrine Lakhmiri
+Sankavi Kumanan
+
+
