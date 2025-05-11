@@ -7,7 +7,7 @@ void vide_buffer(){
 
 void constructeur_animal(Animal* a, int* esp, int n){
     strncpy(a->commentaire, "vide", MAX_com);
-    a->commentaire[MAX_com - 1] = '\0';   //met \0 à la fin si la chaîne est trop longue
+    a->commentaire[MAX_com - 1] = '\0';   //met '\0' à la fin si la chaîne est trop longue
     
   int verif;
   printf("Nom animal : ");
@@ -78,7 +78,8 @@ void lire_animaux(Animal* a, int n) {
         printf("Message d'erreur = %s \n", strerror(errno) );
         exit(4);
     }
-  
+
+    //récupérer les informations des animaux à partir du fichier
     fscanf(fic, "%d", &a->identifiant);
     fscanf(fic, "%49s", a->nom);
     fscanf(fic, "%d", &tmp);
@@ -99,9 +100,11 @@ FILE* creer_fichier_animal(Animal* a, int n){
   fic = fopen(nom, "w");
   if(fic==NULL){
     printf("Echec d'ouverture du fichier.");
-    exit(1);
+    printf("code d'erreur = %d \n", errno );
+    printf("Message d'erreur = %s \n", strerror(errno) );
+    exit(5);
   }
-  else{
+  else{   //écrire les informations dans le fichier
     fprintf(fic,"%d \n %s \n %d \n %d \n %f \n %s",a->identifiant, a->nom, a->espece, a->annee, a->poids, a->commentaire);
     printf("Le fichier animal a bien été rempli!");
     }
