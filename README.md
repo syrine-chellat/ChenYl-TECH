@@ -1,21 +1,28 @@
 # Mon Projet
 accès au lien ...
 
-CHenYI-TECH
+ChenYl-TECH
 Gestion d'un refuge animalier en langage C ( Préing1 2024-2025 ) 
 
-Une brève description de ce que fait ton projet.  
-Exemple : "Un gestionnaire de liste d'utilisateurs en C, avec des options pour ajouter, supprimer et afficher des utilisateurs à partir de fichiers texte."
+Ce projet gère les adorables pensionnaire du chenil ChenYl-Tech, s’occupe de différents types d’animaux et les propose à l’adoption.
+Il permet de gérer le chenil de manière efficace en stockant les informations dans des fichiers.
+Ce programme offre une interface textuelle permettant d’ajouter, rechercher, modifier et supprimer des fiches animales ainsi que de gérer d’autres aspects du chenil.
 
 ## 📁 Structure du projet
 
-Ici, tu peux décrire l'organisation de ton projet, pour que les autres sachent où se trouvent les fichiers importants.
-
-Exemple :
 - `main.c` : Point d'entrée du programme (où le programme commence)
+- `affichage.c` : Code pour afficher les animaux
+- `menu.c` : Code pour afficher le menu
+- `ajout.c` : Code pour que l'utilisateur confie un animal
+- `adoption.c` : Code pour adopter un animal
+- `recherche.c` : Code pour rechercher un animal
+- `inventaire.c` : Code pour compter les animaux
+- `quotidien.c` : Code pour gérer les tâches du quotidiens
 - `monmodule.c` : Code pour gérer les utilisateurs
-- `monmodule.h` : Déclarations des fonctions et structures pour `monmodule.c`
-- `data/` : Dossier contenant les fichiers `.txt` utilisés pour stocker les données des utilisateurs
+- `monmodule.c` : Code pour gérer les utilisateurs
+- `monmodule.c` : Code pour gérer les utilisateurs
+- `fichier.h` : Déclarations des fonctions et structures
+- `animaux/` : Dossier contenant les fichiers `.txt` utilisés pour stocker les données des animaux
 
 ## ▶️ Compilation 
 
