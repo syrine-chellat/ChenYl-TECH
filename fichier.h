@@ -29,6 +29,7 @@ int count;
 Espece espece;
 }StatEspece;
 
+//déclarations fonctions-procédures
 void centrer();
 void vide_buffer();
 void lire_animaux(Animal* a, int n);
