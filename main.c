@@ -46,13 +46,13 @@ int main()
 					    	fclose(fichier);
 					    	printf("L'animal a bien été enregistré, merci de nous l'avoir confié! \n");
 							retour = retour_menu();
-					     
-				    	}
-			    	}
 						if(retour){
 			    				break;
 			   				 }
 					    	clrscr();
+					     
+				    	}
+			    	}
 					    	break;
 		    	case 2 : //rechercher
 			    	rechercher_animal(animal, MAX_animaux);
