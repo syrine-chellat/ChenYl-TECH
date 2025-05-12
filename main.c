@@ -28,7 +28,7 @@ int main()
 	}*/
 
 	for(int i=0; i<21; i++){
-		lire_animaux(animal[i], i);
+		lire_animaux(animal+i , i);
 	}
     
 	int choix;
