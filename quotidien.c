@@ -36,7 +36,7 @@ void DAY_CLEAN(Animal* a, int taille){
             temps += (5*7) + 20;
         }
         else{                                        // cage vide = 5 minutes/jour
-        t    emps += 2*7;
+        temps += 2*7;
         }
     }
     int heures = temps/60;
