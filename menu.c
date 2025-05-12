@@ -15,15 +15,15 @@ int afficher_menu() {
 		centrer();
 		couleur("30;45");
     		printf("===== Menu ChenYI-Tech =====\n"); 
-    		couleur("0")
+    		couleur("0");
     		centrer();
    		couleur("30;45");        
 		printf("1. Ajouter un animal        \n" );
-		couleur("0")
+		couleur("0");
 		centrer();
 		couleur("30;45")
 		printf("2. Rechercher un animal     \n");
-		couleur("0")
+		couleur("0");
 		centrer();
 		couleur("30;45");
 		printf("3. Afficher tous les animaux\n");
@@ -51,8 +51,8 @@ int afficher_menu() {
 		couleur("0");
  		verif = scanf("%d" , &choix); 
 		vide_buffer();
- 		while (choix < 1 || choix > 7 || verif != 1);
-   }
+ 		
+   }while (choix < 1 || choix > 7 || verif != 1);
 return choix;
 }
 
