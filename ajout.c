@@ -68,7 +68,7 @@ void constructeur_animal(Animal* a, int* esp, int n){
 void lire_animaux(Animal* a, int n) {
     int tmp;
     char nom[50];
-    snprintf(nom, sizeof(nom), "animal_%d.txt", n); 
+    snprintf(nom, sizeof(nom), "animaux/animal_%d.txt", n); 
 
     FILE* fic =NULL;
     fic = fopen(nom, "r");
@@ -94,7 +94,7 @@ void lire_animaux(Animal* a, int n) {
 
 FILE* creer_fichier_animal(Animal* a, int n){
   char nom[50];
-  snprintf(nom, sizeof(nom), "animal_%d.txt", n);
+  snprintf(nom, sizeof(nom), "animaux/animal_%d.txt", n);
 
   FILE* fic = NULL;
   fic = fopen(nom, "w");
