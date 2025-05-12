@@ -1,5 +1,5 @@
 #include "fichier.h"
-#include "couleur.h"
+#include "couleurs.h"
 
 void centrer(){
 	printf("                                                         ");
