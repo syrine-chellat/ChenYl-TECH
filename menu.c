@@ -46,9 +46,9 @@ int afficher_menu() {
 		couleur("0");
 	
 		centrer();
-		couleur("30;45");
+		
 		printf("Choix: ");
-		couleur("0");
+		
  		verif = scanf("%d" , &choix); 
 		vide_buffer();
  		
